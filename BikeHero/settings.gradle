@@ -1,0 +1,6 @@
+include ':app', ':photo', ':Lib-MVP', ':Lib-Tools', ':lib-zxing', ':lib-pay'
+project(':photo').projectDir = new File('library/photo')
+project(':Lib-MVP').projectDir = new File('library/Lib-MVP')
+project(':Lib-Tools').projectDir = new File('library/Lib-Tools')
+project(':lib-zxing').projectDir = new File('library/lib-zxing')
+project(':lib-pay').projectDir = new File('library/lib-pay')

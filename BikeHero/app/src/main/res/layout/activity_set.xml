@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:fitsSystemWindows="true">
+
+    <include layout="@layout/head_layout" />
+
+    <View style="@style/line"/>
+    &lt;!&ndash;<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/color_white">
+    <RelativeLayout
+        android:id="@+id/about_us"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            style="@style/black_17_w_w"
+            android:text="@string/set_about_us"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"/>
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@color/color_deep_gray"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <View
+        style="@style/line"
+        android:layout_marginLeft="15dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/color_white">
+        <RelativeLayout
+            android:id="@+id/protocol"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                style="@style/black_17_w_w"
+                android:text="@string/set_set_protocol"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"/>
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@color/color_deep_gray"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <View
+            style="@style/line"
+            android:layout_marginLeft="15dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/color_white">
+        <RelativeLayout
+            android:id="@+id/chrge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                style="@style/black_17_w_w"
+                android:text="@string/set_about_charge"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"/>
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@color/color_deep_gray"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </LinearLayout>&ndash;&gt;
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:listSelector="@color/translate"
+        android:divider="@null"
+        android:scrollbars="none"></ListView>
+    <View style="@style/line"/>
+    <View style="@style/line"
+        android:layout_marginTop="10dp"/>
+    <RelativeLayout
+        android:id="@+id/clear"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/color_white"
+        >
+        <TextView
+            style="@style/black_17_w_w"
+            android:text="@string/set_about_clear"
+            android:layout_marginLeft="15dp"
+            android:layout_centerVertical="true"
+            />
+        <TextView
+            android:id="@+id/cache"
+            style="@style/deep_gray_17_w_w"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_centerVertical="true"
+            />
+    </RelativeLayout>
+    <View style="@style/line"/>
+
+    <View style="@style/line"
+        android:layout_marginTop="20dp"/>
+    <RelativeLayout
+        android:id="@+id/logout"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/white"
+        >
+        <TextView
+            style="@style/black_17_w_w"
+            android:text="@string/set_logout"
+            android:layout_centerInParent="true"
+            />
+    </RelativeLayout>
+    <View style="@style/line"/>
+    <vc.thinker.tools.views.NewTextView
+        android:id="@+id/appcode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:textColor="@color/color_bg"
+        android:background="@color/translate"
+        />
+</LinearLayout>-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:background="@color/white">
+
+    <include layout="@layout/head_layout" />
+
+    <!--<View
+        android:background="@color/bg_color"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>-->
+    <View style="@style/line" />
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/color_white">
+    <RelativeLayout
+        android:id="@+id/about_us"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            style="@style/black_17_w_w"
+            android:text="@string/set_about_us"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"/>
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@color/color_deep_gray"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <View
+        style="@style/line"
+        android:layout_marginLeft="15dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/color_white">
+        <RelativeLayout
+            android:id="@+id/protocol"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                style="@style/black_17_w_w"
+                android:text="@string/set_set_protocol"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"/>
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@color/color_deep_gray"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <View
+            style="@style/line"
+            android:layout_marginLeft="15dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/color_white">
+        <RelativeLayout
+            android:id="@+id/chrge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                style="@style/black_17_w_w"
+                android:text="@string/set_about_charge"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"/>
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@color/color_deep_gray"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </LinearLayout>-->
+
+<!--    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp">
+
+        &lt;!&ndash;<View
+            android:background="@color/bg_color"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+        <View style="@style/line" />&ndash;&gt;
+
+    </LinearLayout>-->
+
+
+    <!--<View
+        android:background="@color/bg_color"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+    <View style="@style/line" />-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="37dp"
+        android:layout_gravity="center_horizontal" >
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:listSelector="@color/translate"
+            android:divider="@null"
+            android:scrollbars="none"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="70dp">
+        </ListView>
+
+        <RelativeLayout
+            android:id="@+id/rl_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bottom_shadow_bg"
+            android:layout_alignParentBottom="true">
+
+            <TextView
+                android:id="@+id/logout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:gravity="center"
+                style="@style/white_18"
+                android:text="@string/set_logout"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/xl_button_select"/>
+
+            <vc.thinker.tools.views.NewTextView
+                android:id="@+id/appcode"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/logout"
+                android:layout_marginTop="10dp"
+                android:textSize="13sp"
+                android:textColor="@color/color_a5a5a5"
+                android:background="@color/translate"
+                android:text="1321465465"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <!--<View style="@style/line"/>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <vc.thinker.tools.views.NewTextView
+            android:id="@+id/appcode"
+            android:layout_marginTop="14dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:textColor="#e1e1e1"
+            android:background="@color/translate" />
+    </RelativeLayout>-->
+
+</LinearLayout>

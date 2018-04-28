@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/head_layout" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_bg"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/head_modify"
+                android:layout_width="match_parent"
+                android:layout_height="88dp"
+                android:background="@color/white">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/icon_my"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/portrait"
+                    android:elevation="15dp"
+                    android:outlineProvider="background"
+                    android:background="@drawable/xl_circle"
+                    app:civ_border_color="@color/white"
+                    app:civ_border_width="3dp" />
+
+
+                <LinearLayout
+                    android:layout_toRightOf="@+id/icon_my"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="14dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/userName"
+                        style="@style/xl_20_333333" />
+
+                    <LinearLayout
+                        android:id="@+id/vip_ll"
+                        android:layout_marginTop="4dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/vip_bg"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/vip_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="2.5dp"
+                            android:paddingTop="2.5dp"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginRight="12dp"
+                            android:text="加入会员>"
+                            android:textSize="11sp"
+                            android:textColor="@drawable/item_question_text_selector" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:scaleType="center"
+                    android:src="@drawable/right_arrow" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/useStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <FrameLayout
+                    android:id="@+id/auth_data"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:background="@drawable/xl_shadow_bg"
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_white"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/my_stroke"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp">
+
+                    <ImageView
+                        android:id="@+id/image1"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/my_trip_icon"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp" />
+                    <TextView
+                        style="@style/xl_15_333333"
+                        android:layout_toRightOf="@+id/image1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="18dp"
+                        android:text="@string/my_ll1" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:scaleType="center"
+                        android:src="@drawable/right_arrow" />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/line_8"
+                    style="@style/line"
+                    android:layout_marginLeft="58dp" />
+
+                <RelativeLayout
+                    android:id="@+id/my_vip"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:scaleType="center"
+                        android:src="@drawable/right_arrow" />
+
+                    <ImageView
+                        android:id="@+id/image2"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/my_vip_icon"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp" />
+                    <TextView
+                        android:id="@+id/textView3"
+                        style="@style/xl_15_333333"
+                        android:layout_toRightOf="@+id/image2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="18dp"
+                        android:text="@string/my_ll8" />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/line_1"
+                    style="@style/line"
+                    android:layout_marginLeft="58dp" />
+
+                <RelativeLayout
+                    android:id="@+id/my_box"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp">
+
+                    <ImageView
+                        android:id="@+id/image3"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/my_wallet_icon"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp" />
+                    <TextView
+                        style="@style/xl_15_333333"
+                        android:layout_toRightOf="@+id/image3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="18dp"
+                        android:text="@string/my_ll2" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:scaleType="center"
+                        android:src="@drawable/right_arrow" />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/line_2"
+                    style="@style/line"
+                    android:layout_marginLeft="58dp"/>
+
+                <RelativeLayout
+                    android:id="@+id/my_offer"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp">
+
+                    <ImageView
+                        android:id="@+id/image4"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/my_preferential_icon"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp" />
+
+                    <TextView
+                        style="@style/xl_15_333333"
+                        android:layout_toRightOf="@+id/image4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="18dp"
+                        android:text="@string/my_ll3" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:scaleType="center"
+                        android:src="@drawable/right_arrow" />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/line_9"
+                    style="@style/line"
+                    android:visibility="gone"
+                    android:layout_marginLeft="58dp" />
+                <RelativeLayout
+                    android:visibility="gone"
+                    android:id="@+id/my_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp">
+
+                    <ImageView
+                        android:id="@+id/image5"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/my_message_icon"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp" />
+
+                    <TextView
+                        style="@style/black_17"
+                        android:layout_toRightOf="@+id/image5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="18dp"
+                        android:text="@string/my_ll10" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:scaleType="center"
+                        android:src="@drawable/right_arrow" />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/line_3"
+                    style="@style/line"
+                    android:layout_marginLeft="58dp"/>
+
+                <RelativeLayout
+                    android:id="@+id/my_invate"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@color/color_white">
+
+                    <ImageView
+                        android:id="@+id/image6"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/my_invitation_icon"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp" />
+
+                    <TextView
+                        style="@style/xl_15_333333"
+                        android:layout_toRightOf="@+id/image6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="18dp"
+                        android:text="@string/my_ll4" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:scaleType="center"
+                        android:src="@drawable/right_arrow" />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/line_4"
+                    style="@style/line"
+                    android:layout_marginLeft="58dp"/>
+                <RelativeLayout
+                    android:id="@+id/my_guide"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:scaleType="center"
+                        android:src="@drawable/right_arrow" />
+
+                    <ImageView
+                        android:id="@+id/image7"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/my_guide_icon"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp" />
+
+                    <TextView
+                        android:id="@+id/textView"
+                        style="@style/xl_15_333333"
+                        android:layout_toRightOf="@+id/image7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="18dp"
+                        android:text="@string/my_ll5" />
+                </RelativeLayout>
+
+                <View
+                    style="@style/line"
+                    android:layout_marginLeft="58dp" />
+
+                <RelativeLayout
+                    android:id="@+id/my_set"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:scaleType="center"
+                        android:src="@drawable/right_arrow" />
+
+                    <ImageView
+                        android:id="@+id/image8"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/my_setup_icon"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp" />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        style="@style/xl_15_333333"
+                        android:layout_toRightOf="@+id/image8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="18dp"
+                        android:text="@string/my_ll6" />
+                </RelativeLayout>
+
+                <View
+                    style="@style/line"
+                    android:layout_marginLeft="58dp"/>
+
+                <RelativeLayout
+                    android:id="@+id/my_aboutus"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@color/color_white">
+
+                    <ImageView
+                        android:id="@+id/image9"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/my_contact_icon"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp" />
+
+                    <TextView
+                        style="@style/xl_15_333333"
+                        android:layout_toRightOf="@+id/image9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="18dp"
+                        android:text="@string/my_ll7" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:scaleType="center"
+                        android:src="@drawable/right_arrow" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!-- <View style="@style/line" />
+             <View android:layout_width="match_parent"
+                 android:layout_height="10dp"
+                 />-->
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

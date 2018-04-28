@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_marginLeft="12dp"
+        android:drawableLeft="@drawable/lock_icon"
+        android:drawablePadding="12dp"
+        android:gravity="center_vertical"
+        android:text="@string/park_tips"
+        android:textColor="@color/color_black"
+        android:textSize="13sp" />
+
+    <View style="@style/line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="79dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/black_15_w_w"
+                    android:text="@string/park_money" />
+
+                <TextView
+                    android:id="@+id/money"
+                    style="@style/deep_gray_15_w_w"
+                    android:text="1元" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="7dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/black_15_w_w"
+                    android:text="@string/park_code" />
+
+                <TextView
+                    android:id="@+id/code"
+                    style="@style/deep_gray_15_w_w"
+                    android:text="12345678" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/color_line" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/unLock"
+                style="@style/black_14_w_w"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/open_lock_bg"
+                android:gravity="center"
+                android:text="@string/park_open_loack" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View style="@style/line" />
+
+    <LinearLayout
+        android:id="@+id/text_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/tip_red_14_w_w"
+            android:text="@string/park_text1" />
+
+        <TextView
+            style="@style/black_14_w_w"
+            android:layout_marginTop="7dp"
+            android:text="@string/park_text2" />
+
+        <TextView
+            style="@style/black_14_w_w"
+            android:text="@string/park_text3" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/viewMy"
+        android:visibility="gone"
+        style="@style/line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <TextView
+                style="@style/black_15_w_w"
+                android:layout_marginLeft="12dp"
+                android:text="@string/park_location" />
+
+            <TextView
+                android:id="@+id/time"
+                style="@style/deep_gray_15_w_w"
+                android:text="" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/refreshLocation"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:background="@drawable/genaral_btn_click_bg_with_gradient_no_coners"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/refreshText"
+                style="@style/white_15_w_w"
+                android:text="@string/park_refresh" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

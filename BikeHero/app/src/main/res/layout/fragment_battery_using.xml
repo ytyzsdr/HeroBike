@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                style="@style/black_13_w_w"
+                android:layout_marginLeft="15dp"
+                android:drawableLeft="@drawable/lock_icon"
+                android:drawablePadding="15dp"
+                android:gravity="center"
+                android:text="@string/battery_use_tip" />
+
+            <TextView
+                android:id="@+id/closeQusetion"
+                style="@style/tip_red_13_w_w"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:text="@string/battery_use_close" />
+        </RelativeLayout>
+
+        <View style="@style/line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="88dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/useTime"
+                    style="@style/theme_25_w_w"
+                    android:text="0" />
+
+                <TextView
+                    style="@style/black_12_w_w"
+                    android:text="@string/battery_ride_time" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/b_remain"
+                    style="@style/theme_25_w_w"
+                    android:text="0" />
+
+                <TextView
+                    style="@style/black_12_w_w"
+                    android:text="@string/battery_remain" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/b_life"
+                    style="@style/theme_25_w_w"
+                    android:text="0" />
+
+                <TextView
+                    style="@style/black_12_w_w"
+                    android:text="@string/battery_life" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View style="@style/line" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <TextView
+                    style="@style/black_15_w_w"
+                    android:layout_marginLeft="12dp"
+                    android:text="@string/battery_use_money" />
+
+                <TextView
+                android:id="@+id/price"
+                style="@style/theme_15_w_w"
+                android:text="" />
+                <TextView
+                    style="@style/deep_gray_15_w_w"
+                    android:text="元" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/closeTrip"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:background="@drawable/genaral_btn_click_bg_with_gradient_no_coners"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/stopTrip"
+                    style="@style/white_15_w_w"
+                    android:text="@string/battery_use_stop_trip" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

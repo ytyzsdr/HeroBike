@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="88dp"
+    android:background="@color/color_white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/view_self_title"
+        style="@style/black_14_w_w"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="6dp"
+        android:text="@string/certifacation_title" />
+
+    <LinearLayout
+        android:id="@+id/certifation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3.5dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1px"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:background="@color/color_white" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1px"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:background="@color/color_line" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/step1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerInParent="true"
+                android:scaleType="center" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_centerVertical="true"
+                android:background="@color/color_line" />
+
+            <ImageView
+                android:id="@+id/step2"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerInParent="true"
+                android:scaleType="center" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ident"
+            android:visibility="gone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_centerVertical="true"
+                android:background="@color/color_line" />
+
+            <ImageView
+                android:id="@+id/step3"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerInParent="true"
+                android:scaleType="center" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1px"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:background="@color/color_line" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1px"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:background="@color/color_white" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/step4"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerInParent="true"
+                android:scaleType="center" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/deep_gray_13"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="@string/certifacation_au1" />
+
+        <TextView
+            style="@style/deep_gray_13"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="@string/certifacation_au2" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/ident_txt"
+            style="@style/deep_gray_13"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="@string/certifacation_au3" />
+
+        <TextView
+            style="@style/deep_gray_13"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="@string/certifacation_au4" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    tools:context="com.danchexia.bikehero.main.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/color_white">
+        <ImageView
+            android:id="@+id/head_left"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:scaleType="center"
+            android:src="@drawable/back_bg"/>
+        <TextView
+            android:id="@+id/head_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/color_black"
+            android:textSize="18sp"
+            android:text="标题"
+            />
+        <RelativeLayout
+            android:id="@+id/head_message"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="center"
+                android:layout_centerInParent="true"
+                android:src="@drawable/message_icon_bg"
+                />
+            <ImageView
+                android:id="@+id/message_tips_icon"
+                android:visibility="invisible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="9dp"
+                android:layout_marginTop="9dp"
+                android:src="@drawable/message_tips"/>
+        </RelativeLayout>
+        <ImageView
+            android:id="@+id/head_right"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:scaleType="center"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/head_message"
+            android:src="@drawable/nav_seach_bg"/>
+    </RelativeLayout>
+    <FrameLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.baidu.mapapi.map.MapView
+                android:id="@+id/bmapView"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:clickable="true" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_centerInParent="true">
+
+                <ImageView
+                    android:id="@+id/map_center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="center"
+                    android:src="@drawable/needle" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <FrameLayout
+            android:id="@+id/bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</LinearLayout>

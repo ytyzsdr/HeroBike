@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.danchexia.bikehero">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" />
+    <!--百度地图涉及到的权限-->
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <!-- 这个权限用于进行网络定位-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 这个权限用于访问GPS定位-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位-->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位-->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 用于读取手机当前的状态-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 访问网络，网络定位需要上网-->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- SD卡读取权限，用户写入离线定位数据-->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE" />
+
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+
+    <!-- 应用使用蓝牙的权限 -->
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <!-- 扫描蓝牙设备或者操作蓝牙设置 -->
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission-sdk-23 android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-feature
+        android:name="android.hardware.bluetooth_le"
+        android:required="true" />
+    <!--蒲公英sdk权限配置-->
+    <!-- 必选 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- 获取网络状态 -->
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- 网络通信 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" /> <!-- 获取设备信息 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- 获取MAC地址 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- 读写sdcard，storage等等 -->
+
+    <!-- 可选 -->
+    <uses-permission android:name="android.permission.READ_LOGS" /> <!-- 获取logcat日志 -->
+
+    <!--友盟-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+
+    <application
+        android:name="com.danchexia.bikehero.app.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data android:value="5acb0398f29d982a8d00000d" android:name="UMENG_APPKEY"/>
+        <meta-data android:value="DEFAULT" android:name="UMENG_CHANNEL"/>
+        <activity
+            android:name="com.danchexia.bikehero.main.WelcaomActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.danchexia.bikehero.main.MainActivity"
+            android:screenOrientation="portrait"></activity>
+        <!--绑定手机-->
+        <activity
+            android:name="com.danchexia.bikehero.main.bindphone.BindPhoneActivity"
+            android:screenOrientation="portrait" />
+        <!--扫描二维码-->
+        <activity
+            android:name="com.danchexia.bikehero.main.openloack.ScanQrcodeActivity"
+            android:screenOrientation="portrait" />
+        <!--输入编码-->
+        <activity
+            android:name="com.danchexia.bikehero.main.openloack.CodeOpenLockActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+
+        </activity>
+        <!--开锁中-->
+        <activity
+            android:name="com.danchexia.bikehero.main.openloack.LockOpenningActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:screenOrientation="portrait" />
+        <!--我-->
+        <activity
+            android:name="com.danchexia.bikehero.main.my.MyActivity"
+            android:screenOrientation="portrait"></activity>
+        <!--押金充值-->
+        <activity
+            android:name="com.danchexia.bikehero.main.recharge.RechargeActivity"
+            android:screenOrientation="portrait"></activity>
+        <!--身份认证-->
+        <activity
+            android:name="com.danchexia.bikehero.main.certifacation.CertifacationActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"></activity>
+        <!--邀请码-->
+        <activity
+            android:name="com.danchexia.bikehero.main.invate.InvateActivity"
+            android:screenOrientation="portrait"></activity>
+        <!--个人信息-->
+        <activity
+            android:name="com.danchexia.bikehero.main.personal.PersonalActivity"
+            android:screenOrientation="portrait"></activity>
+        <!--我的行程-->
+        <activity
+            android:name="com.danchexia.bikehero.main.mystroke.MyStrokeActivity"
+            android:screenOrientation="portrait"></activity>
+        <!--行程详情-->
+        <activity
+            android:name="com.danchexia.bikehero.main.strokedetail.StrokeDetailActivity"
+            android:screenOrientation="portrait"></activity>
+        <!--骑行结束-->
+        <activity
+            android:name="com.danchexia.bikehero.main.rideover.RideOverActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <!--我的钱包-->
+        <activity
+            android:name="com.danchexia.bikehero.main.wallet.WalletActivity"
+            android:screenOrientation="portrait"></activity>
+        <!--用户指南-->
+        <activity
+            android:name="com.danchexia.bikehero.main.userguide.UserGuideActivity"
+            android:screenOrientation="portrait"></activity>
+        <!--设置-->
+        <activity
+            android:name="com.danchexia.bikehero.main.set.SetActivity"
+            android:screenOrientation="portrait"></activity>
+        <!--邀请好友-->
+        <activity
+            android:name="com.danchexia.bikehero.main.myinvate.MyInvateActivity"
+            android:screenOrientation="portrait"></activity>
+        <!--我的优惠-->
+        <activity
+            android:name="com.danchexia.bikehero.main.myoffer.MyOfferActivity"
+            android:screenOrientation="portrait"></activity>
+        <!--问题反馈-->
+        <activity
+            android:name="com.danchexia.bikehero.main.feedback.FeedBackActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden"></activity>
+        <!--选择更多-->
+        <activity
+            android:name="com.danchexia.bikehero.main.feedback.ChooseMoreQuestionActivity"
+            android:screenOrientation="portrait"></activity>
+        <!--webview-->
+        <activity
+            android:name="com.danchexia.bikehero.main.WebViewActivity"
+            android:screenOrientation="portrait"></activity>
+        <!--搜索-->
+        <activity
+            android:name="com.danchexia.bikehero.main.childseach.SeachActivity"
+            android:screenOrientation="portrait" />
+        <!--修改昵称-->
+        <activity
+            android:name="com.danchexia.bikehero.main.personal.FixUserNameActivity"
+            android:screenOrientation="portrait" />
+        <!--扫描返回数据-->
+        <activity
+            android:name="com.danchexia.bikehero.main.openloack.ScanReturnDataActivity"
+            android:screenOrientation="portrait" />
+        <!--扫描返回数据-->
+        <activity
+            android:name="com.danchexia.bikehero.main.feedback.FeedBackScanActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.danchexia.bikehero.main.newwallet.MyWalletActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.danchexia.bikehero.main.newwallet.ToRechartWalletActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.danchexia.bikehero.main.newwallet.DetailRechartActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.danchexia.bikehero.main.AdvanceActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.danchexia.bikehero.main.wallet.WebViewNoBaseUrl"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.danchexia.bikehero.main.member.RechartMemberActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.danchexia.bikehero.main.member.MemberListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.danchexia.bikehero.main.messagecenter.MessageCenterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.danchexia.bikehero.main.fixpower.FixPowerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.danchexia.bikehero.batterymain.BatteryMainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.danchexia.bikehero.batterymain.battery.BatteryTripDetailActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.danchexia.bikehero.generalphotoreview.PhotoReviewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.danchexia.bikehero.elebike.EleMainActivity"
+            android:screenOrientation="portrait" />
+
+        <service android:name="com.danchexia.bikehero.service.BeaconService" />
+        <service android:name="com.danchexia.bikehero.batteryservice.BatteryService" />
+        <!--轮询 请求当前状态-->
+        <service android:name="com.danchexia.bikehero.service.RideStatusService" />
+        <!--轮询 开锁-->
+        <service android:name="com.danchexia.bikehero.service.OpenLockService" />
+        <!--百度地图配置-->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="${BAIDU_APP_KEY}" />
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote"></service>
+        <!--sharesdk-->
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+
+            <intent-filter>
+                <data android:scheme="tencent100371282" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+        </activity>
+        <!-- 微信 start -->
+        <activity
+            android:name="com.danchexia.bikehero.wx.WxApiActivity"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <activity-alias
+            android:name="${applicationId}.wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:targetActivity="com.danchexia.bikehero.wx.WxApiActivity" />
+        <activity-alias
+            android:name="${applicationId}.wxapi.WXEntryActivity"
+            android:exported="true"
+            android:targetActivity="com.danchexia.bikehero.wx.WxApiActivity" />
+        <!-- 微信 end -->
+        <!-- 支付宝支付 end -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <!-- 支付宝支付 end -->
+        <!--蓝牙服务-->
+        <service
+            android:name="com.danchexia.bikehero.bluetooth.BluetoothLeService"
+            android:enabled="true" />
+        <!-- 以下是极光推送的配置-->
+        <!-- Required SDK 核心功能-->
+        <!-- 可配置android:process参数将PushService放在其他进程中 -->
+        <service
+            android:name="cn.jpush.android.service.PushService"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER" />
+                <action android:name="cn.jpush.android.intent.REPORT" />
+                <action android:name="cn.jpush.android.intent.PushService" />
+                <action android:name="cn.jpush.android.intent.PUSH_TIME" />
+            </intent-filter>
+        </service>
+
+        <!-- since 1.8.0 option 可选项。用于同一设备中不同应用的JPush服务相互拉起的功能。 -->
+        <!-- 若不启用该功能可删除该组件，将不拉起其他应用也不能被其他应用拉起 -->
+        <service
+            android:name="cn.jpush.android.service.DaemonService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.DaemonService" />
+                <category android:name="${JPUSH_PKGNAME}" />
+            </intent-filter>
+        </service>
+
+        <!-- Required SDK核心功能-->
+        <receiver
+            android:name="cn.jpush.android.service.PushReceiver"
+            android:enabled="true">
+            <intent-filter android:priority="1000">
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" />
+                <category android:name="${JPUSH_PKGNAME}" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <!-- Optional -->
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Required SDK核心功能-->
+        <activity
+            android:name="cn.jpush.android.ui.PushActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="false"
+            android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="${JPUSH_PKGNAME}" />
+            </intent-filter>
+        </activity>
+
+        <!-- Required SDK核心功能-->
+        <service
+            android:name="cn.jpush.android.service.DownloadService"
+            android:enabled="true"
+            android:exported="false"></service>
+
+        <!-- Required SDK核心功能-->
+        <receiver android:name="cn.jpush.android.service.AlarmReceiver" />
+
+        <!-- User defined.  For test only  用户自定义的广播接收器-->
+        <receiver
+            android:name="com.danchexia.bikehero.jpush.MyReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION" /> <!--Required  用户注册SDK的intent-->
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" /> <!--Required  用户接收SDK消息的intent-->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" /> <!--Required  用户接收SDK通知栏信息的intent-->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" /> <!--Required  用户打开自定义通知栏的intent-->
+                <action android:name="cn.jpush.android.intent.CONNECTION" /><!-- 接收网络变化 连接/断开 since 1.6.3 -->
+                <category android:name="${JPUSH_PKGNAME}" />
+            </intent-filter>
+        </receiver>
+
+
+        <!-- Required. For publish channel feature -->
+        <!-- JPUSH_CHANNEL 是为了方便开发者统计APK分发渠道。-->
+        <!-- 例如: -->
+        <!-- 发到 Google Play 的APK可以设置为 google-play; -->
+        <!-- 发到其他市场的 APK 可以设置为 xxx-market。 -->
+        <!-- 目前这个渠道统计功能的报表还未开放。-->
+        <meta-data
+            android:name="JPUSH_CHANNEL"
+            android:value="developer-default" />
+        <!-- Required. AppKey copied from Portal -->
+        <meta-data
+            android:name="JPUSH_APPKEY"
+            android:value="${JPUSH_APPKEY}" />
+        <!--      极光推送配置完成-->
+    </application>
+
+</manifest>

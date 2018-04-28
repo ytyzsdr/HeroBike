@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/head_layout" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="47dp"
+            android:scrollbars="none">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="47dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="22dp"
+                    android:background="@drawable/feedback_edt_bg">
+
+                    <EditText
+                        android:id="@+id/syscode"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:background="@null"
+                        android:hint="@string/feedback_bike_code"
+                        android:inputType="number"
+                        android:maxLength="20"
+                        android:paddingLeft="15dp"
+                        android:textColor="@color/color_theme"
+                        android:textColorHint="@color/color_deep_gray"
+                        android:textSize="15sp" />
+
+                    <ImageView
+                        android:id="@+id/scan_code"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:scaleType="center"
+                        android:src="@drawable/feedback_qr" />
+                </LinearLayout>
+
+                <TextView
+                    style="@style/augay_12_w_w"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="25dp"
+                    android:text="@string/feedback_choose_qusetion_type" />
+
+                <vc.thinker.tools.views.MyGridView
+                    android:id="@+id/gridview_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="13dp"
+                    android:listSelector="@color/translate"
+                    android:numColumns="3"
+                    android:scrollbars="none"></vc.thinker.tools.views.MyGridView>
+
+                <LinearLayout
+                    android:id="@+id/blue_ll_location"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="vertical">
+
+                    <View style="@style/line" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp">
+
+                        <LinearLayout
+                            android:id="@+id/v_ll_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/black_14_w_w"
+                                android:text="蓝牙连接状态：" />
+
+                            <TextView
+                                android:id="@+id/blueStatus"
+                                style="@style/augay_14_w_w"
+                                android:text="检测中" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/v_ll_1"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/black_14_w_w"
+                                android:text="蓝牙锁状态：" />
+
+                            <TextView
+                                android:id="@+id/blueLockStatus"
+                                style="@style/augay_14_w_w"
+                                android:text="检测中" />
+                        </LinearLayout>
+
+                        <Button
+                            android:id="@+id/resetSeach"
+                            android:layout_width="113dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/genaral_btn_click_bg_with_gradient"
+                            android:text="重新搜索"
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/exception_ll"
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:background="@color/color_bg"
+                        android:orientation="vertical"
+                        android:paddingBottom="8dp">
+
+                        <TextView
+                            style="@style/augay_13_w_w"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="8dp"
+                            android:text="1、请确认您现在在单车蓝牙锁附近；" />
+
+                        <TextView
+                            style="@style/augay_13_w_w"
+                            android:layout_marginLeft="8dp"
+                            android:text="2、若您不在单车附近，请前往单车附近；" />
+
+                        <TextView
+                            android:id="@+id/desc_v_txt1"
+                            style="@style/augay_13_w_w"
+                            android:layout_marginLeft="8dp"
+                            android:text="3、若您已在单车附近，点击【重新搜索】重新搜索蓝牙信息；" />
+
+                        <TextView
+                            android:id="@+id/desc_v_txt2"
+                            style="@style/augay_13_w_w"
+                            android:layout_marginLeft="8dp"
+                            android:text="4、已到单车附近并有重新搜索的操作，还是无法解决，请您尝试重启蓝牙或重新打开应用，点击【重新搜索】重新搜索蓝牙信息；" />
+                        <TextView
+                            style="@style/augay_13_w_w"
+                            android:layout_marginLeft="8dp"
+                            android:text="5、若以上多次尝试都无法解决您的问题。请拍照留证，拍出单车上清晰的锁及锁上二维码，并描述现象提交；" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/normal_ll"
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:background="@color/color_bg"
+                        android:orientation="vertical"
+                        android:paddingBottom="8dp">
+
+                        <TextView
+                            style="@style/augay_13_w_w"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="8dp"
+                            android:text="1、系统判断您使用的单车蓝牙锁是开启状态，请确认您的锁已关上；" />
+
+                        <TextView
+                            style="@style/augay_13_w_w"
+                            android:id="@+id/desc_v_txt3"
+                            android:layout_marginLeft="8dp"
+                            android:text="2、关锁后您可点击【重新搜索】重新搜索蓝牙信息；" />
+
+                        <TextView
+
+                            style="@style/augay_13_w_w"
+                            android:layout_marginLeft="8dp"
+                            android:text="3、若您确认单车锁已关闭，锁状态还显示开，请拍照留证，拍出清晰的单车锁及锁上二维码，并描述现象提交；" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/feedback_edt2_bg">
+
+                    <EditText
+                        android:id="@+id/edt_desc"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:gravity="start"
+                        android:hint="@string/feedback_qusetion_desc"
+                        android:maxLength="150"
+                        android:padding="10dp"
+                        android:textColor="@color/color_333333"
+                        android:textColorHint="@color/color_a5a5a5"
+                        android:textSize="13sp" />
+                    <TextView
+                        android:id="@+id/tv_textcount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:text="150"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:textColor="@color/color_a5a5a5"/>
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_imgcount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="25dp"
+                    android:text="@string/feedback_up_photo"
+                    android:textColor="@color/color_a5a5a5"
+                    android:textSize="13sp" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/my_receycleview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="13dp"></android.support.v7.widget.RecyclerView>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+        <RelativeLayout
+            android:layout_marginBottom="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/bottom_shadow_bg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/complete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/xl_button_sure"
+                android:gravity="center"
+                android:text="提交"
+                android:textColor="@color/color_white"
+                android:layout_marginBottom="30dp"
+                android:textSize="18sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

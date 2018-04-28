@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/color_white">
+        <ImageView
+            android:id="@+id/head_left"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:scaleType="center"
+            android:src="@drawable/back_bg"/>
+        <TextView
+            android:id="@+id/head_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/color_black"
+            android:textSize="18sp"
+            android:text="标题"
+            />
+        <TextView
+            android:id="@+id/save"
+            style="@style/xl_15_333333"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:text="@string/fix_save"/>
+    </RelativeLayout>
+
+    <View style="@style/line"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <EditText
+            style="@style/xl_14_333333"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/nickName"
+            android:maxLength="20"
+            android:background="@null"
+            android:textColorHint="@color/color_a5a5a5"
+            android:hint="@string/fix_username_hint"
+            android:layout_marginTop="42dp"
+            android:gravity="center_horizontal"/>
+        <!--<ImageView
+            android:id="@+id/cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="center"
+            android:src="@drawable/cancel"/>-->
+        <View style="@style/line"
+            android:layout_width="240dp"
+            android:layout_marginTop="10dp"/>
+    </LinearLayout>
+</LinearLayout>

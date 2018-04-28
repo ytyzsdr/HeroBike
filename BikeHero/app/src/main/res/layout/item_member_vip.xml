@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="wrap_content"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/xl_vipcard_bg">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/vipName"
+                style="@style/xl_20_333333" />
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/vipDesc"
+                style="@style/xl_14_999999"
+                android:layout_marginTop="3dp"/>
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/fill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="center"
+            android:visibility="gone"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="14dp"
+            android:src="@drawable/fill"/>
+    </RelativeLayout>
+
+</LinearLayout>

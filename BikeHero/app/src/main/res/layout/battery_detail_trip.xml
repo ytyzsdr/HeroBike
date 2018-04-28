@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/head_layout" />
+
+    <LinearLayout
+        android:id="@+id/share_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.baidu.mapapi.map.MapView
+                android:id="@+id/bmapView"
+                android:layout_width="fill_parent"
+                android:layout_height="180dp"
+                android:clickable="true" />
+
+            <ImageView
+                android:id="@+id/sceen_img"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:scaleType="center" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/icon_my"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="150dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/portrait"
+                android:elevation="10dp"
+                android:outlineProvider="background"
+                android:background="@drawable/xl_circle"
+                app:civ_border_color="@color/color_white"
+                app:civ_border_width="3dp" />
+
+            <TextView
+                android:id="@+id/nickName"
+                style="@style/black_17_w_w"
+                android:visibility="gone"
+                android:layout_alignBottom="@+id/icon_my"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@+id/icon_my" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:scaleType="center"
+                    android:src="@drawable/mileage_icon" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/ride_distance"
+                        style="@style/black_25_w_w"
+                        android:text="0" />
+
+                    <TextView
+                        android:id="@+id/ride_distance_unit"
+                        style="@style/deep_gray_12_w_w"
+                        android:layout_height="wrap_content"
+                        android:text="@string/battery_ride_distance_km" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:scaleType="center"
+                    android:src="@drawable/time_icon" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/saving_g"
+                        style="@style/black_25_w_w"
+                        android:text="0" />
+
+                    <TextView
+                        style="@style/deep_gray_12_w_w"
+                        android:text="@string/battery_ride_time" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <View
+            style="@style/line"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="21dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:layout_marginLeft="60dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="center"
+                    android:src="@drawable/borrow_icon" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/borrowTime"
+                        style="@style/black_13_w_w"
+                        android:text="借用时间：" />
+
+                    <TextView
+                        android:id="@+id/borrowAdd"
+                        style="@style/deep_gray_13_w_w"
+                        android:text="借用地址：" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:layout_marginLeft="60dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="center"
+                    android:src="@drawable/restored_icon" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/pullTime"
+                        style="@style/black_13_w_w"
+                        android:text="归还时间：" />
+
+                    <TextView
+                        android:id="@+id/pullAdd"
+                        style="@style/deep_gray_13_w_w"
+                        android:text="归还地址：" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/payMoney"
+            style="@style/black_14_w_w"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:drawableLeft="@drawable/money_icon"
+            android:drawablePadding="7dp"
+            />
+        <TextView
+            android:id="@+id/syscode"
+            style="@style/deep_gray_13_w_w"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:id="@+id/shareQrCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="20dp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/qrCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="center" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/qrCode"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/myAppName"
+                        style="@style/black_15_w_w"
+                        android:text="@string/app_name_share" />
+
+                    <TextView
+                        android:id="@+id/myAppName_en"
+                        style="@style/deep_gray_14_w_w"
+                        android:text="@string/app_name_en" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/share"
+                style="@style/black_14_w_w"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/share_icon"
+                android:text="@string/stroke_detail_share" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

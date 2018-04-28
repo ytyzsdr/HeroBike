@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/head_layout" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <View
+                style="@style/line"
+                android:layout_marginTop="10dp" />
+
+            <FrameLayout
+                android:id="@+id/certifacation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <View style="@style/line" />
+
+            <View
+                style="@style/line"
+                android:layout_marginTop="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/black_17"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_weight="2"
+                        android:text="@string/activity_certifacation_name" />
+
+                    <EditText
+                        android:id="@+id/userName"
+                        style="@style/black_17"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="7"
+                        android:background="@null"
+                        android:hint="@string/activity_certifacation_name_tip"
+                        android:textColorHint="@color/color_deep_gray" />
+                </LinearLayout>
+
+                <View
+                    style="@style/line"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/black_17"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_weight="2"
+                        android:text="@string/activity_certifacation_auth" />
+
+                    <EditText
+                        android:id="@+id/userAuth"
+                        style="@style/black_17"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="7"
+                        android:background="@null"
+                        android:hint="@string/activity_certifacation_auth_tip"
+                        android:textColorHint="@color/color_deep_gray" />
+                </LinearLayout>
+
+                <View
+                    style="@style/line"
+                    android:layout_marginLeft="15dp" />
+
+                <LinearLayout
+                    android:id="@+id/student"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/black_17"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_weight="2"
+                            android:text="@string/certi_student_id" />
+
+                        <EditText
+                            android:id="@+id/studentId"
+                            style="@style/black_17"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="7"
+                            android:background="@null"
+                            android:hint="@string/certi_student_id_edt"
+                            android:textColorHint="@color/color_deep_gray" />
+                    </LinearLayout>
+
+                    <View
+                        style="@style/line"
+                        android:layout_marginLeft="15dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/black_17"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_weight="2"
+                            android:text="@string/certi_callage_id" />
+
+                        <EditText
+                            android:id="@+id/callageName"
+                            style="@style/black_17"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="7"
+                            android:background="@null"
+                            android:hint="@string/certi_callage_id_edt"
+                            android:textColorHint="@color/color_deep_gray" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View style="@style/line" />
+            <LinearLayout
+                android:id="@+id/certifation_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+            <View
+                style="@style/line"
+                android:layout_marginTop="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_white"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/augay_13_w_w"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/add_photo" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/my_receycleview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"></android.support.v7.widget.RecyclerView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="7dp" />
+            </LinearLayout>
+
+            <View style="@style/line" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/complete"
+                style="@style/white_18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/general_my_bg"
+                android:text="@string/activity_certifacation_complete" />
+
+            <TextView
+                android:id="@+id/failed_desc"
+                style="@style/tip_red_14_w_w"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="15dp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

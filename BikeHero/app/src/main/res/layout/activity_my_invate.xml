@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/head_layout" />
+
+    <LinearLayout
+        android:id="@+id/layout_share"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/head_icon"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/invite_friends_picture" />
+
+        <TextView
+            android:id="@+id/invateMoney1"
+            style="@style/black_13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25dp"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/invateMoney2"
+            style="@style/black_13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="3dp"
+            android:gravity="center" />
+
+        <TextView
+            style="@style/deep_gray_14_w_w"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="75dp"
+            android:text="@string/my_invate_text_code" />
+
+        <TextView
+            android:id="@+id/my_invate_code"
+            style="@style/black_17_w_w"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="4dp"
+            android:text="彩虹单车234567876543" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20dp"
+            >
+
+            <LinearLayout
+                android:id="@+id/shareQrCode"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_margin="20dp">
+
+                <ImageView
+                    android:id="@+id/qrCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:scaleType="center" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/myAppName"
+                        style="@style/black_14_w_w"
+                        android:text="@string/app_name_share" />
+
+                    <TextView
+                        android:id="@+id/myAppName_en"
+                        style="@style/deep_gray_14_w_w"
+                        android:text="@string/app_name_en" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/share"
+                style="@style/black_14_w_w"
+                android:drawablePadding="4dp"
+                android:drawableTop="@drawable/share_icon"
+                android:text="@string/my_invate_share"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_share"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <include layout="@layout/head_layout" />
+
+    <View style="@style/line" />
+
+    <ScrollView
+        android:id="@+id/sv_invate"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/invate_des"
+                    android:layout_marginLeft="0dp"
+                    android:text="邀" />
+
+                <TextView
+                    style="@style/invate_des"
+                    android:text="请" />
+
+                <TextView
+                    style="@style/invate_des"
+                    android:text="好" />
+
+                <TextView
+                    style="@style/invate_des"
+                    android:text="友" />
+
+                <TextView
+                    style="@style/invate_des"
+                    android:text="注" />
+
+                <TextView
+                    style="@style/invate_des"
+                    android:text="册" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/invate_des2"
+                    android:layout_marginLeft="0dp"
+                    android:text="获" />
+
+                <TextView
+                    style="@style/invate_des2"
+                    android:text="得" />
+
+                <TextView
+                    android:id="@+id/invateMoney2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:text="1.0"
+                    android:textColor="@color/color_invate"
+                    android:textSize="27sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    style="@style/invate_des2"
+                    android:text="元" />
+
+                <TextView
+                    style="@style/invate_des2"
+                    android:text="优" />
+
+                <TextView
+                    style="@style/invate_des2"
+                    android:text="惠" />
+
+                <TextView
+                    style="@style/invate_des2"
+                    android:text="券" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="22dp">
+
+                <ImageView
+                    android:id="@+id/iv_invate_bg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/invate_icon" />
+
+                <ImageView
+                    android:id="@+id/iv_invate_qrcode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:background="@drawable/invate_qrcode" />
+
+                <LinearLayout
+                    android:id="@+id/shareQrCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/qrCode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:scaleType="center" />
+
+                    <TextView
+                        android:id="@+id/myAppName"
+                        style="@style/black_14_w_w"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/app_name_share" />
+
+                    <TextView
+                        android:id="@+id/myAppName_en"
+                        style="@style/deep_gray_14_w_w"
+                        android:text="@string/app_name_en" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/ll_share"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="您的邀请码："
+                    android:textColor="#333333"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/my_invate_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:text="1234"
+                    android:textColor="@color/color_invate"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="20dp">
+
+                <LinearLayout
+                    android:id="@+id/ll_share"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/bottom_shadow_bg">
+
+                    <TextView
+                        android:id="@+id/share"
+                        style="@style/white_18"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="30dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:background="@drawable/shape_invate"
+                        android:gravity="center"
+                        android:text="@string/my_invate_share"
+                        android:textColor="@color/color_white" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

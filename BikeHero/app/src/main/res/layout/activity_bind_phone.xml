@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/head_layout" />
+
+
+    <ImageView
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/xl_login_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/xl_login_rectangle"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:src="@drawable/xl_login_phone"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_marginLeft="14dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/color_line" />
+        <EditText
+            android:id="@+id/edt_phone"
+            style="@style/xl_15_333333"
+            android:layout_marginLeft="14dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/bind_phone_num_tip"
+            android:inputType="phone"
+            android:background="@null"
+            android:textColorHint="#a5a5a5"
+            android:maxLength="11" />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="14dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/xl_login_rectangle"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:src="@drawable/xl_login_message" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_marginLeft="14dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/color_line" />
+
+        <EditText
+            android:id="@+id/edt_auth"
+            style="@style/xl_15_333333"
+            android:layout_width="0dp"
+            android:layout_marginLeft="14dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:hint="@string/bind_auth_tip"
+            android:inputType="number"
+            android:maxLength="6"
+            android:textColorHint="#a5a5a5"
+            android:background="@null"/>
+
+        <TextView
+            android:id="@+id/get_auth"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:gravity="right"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dp"
+            android:text="@string/bind_get_auth"
+            android:textColor="#ff8c00"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/button_layout"
+        android:background="@drawable/bottom_shadow_bg_nomal"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/complete"
+            style="@style/white_18"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/xl_button_select"
+            android:enabled="false"
+            android:gravity="center"
+            android:text="@string/bind_complete" />
+
+        <LinearLayout
+            android:layout_below="@+id/complete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="14dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/xl_11_a5a5a5"
+                android:text="@string/bind_text" />
+
+            <TextView
+                android:id="@+id/rules"
+                style="@style/xl_11_ffa723"
+                android:text="@string/bind_rules" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+</LinearLayout>

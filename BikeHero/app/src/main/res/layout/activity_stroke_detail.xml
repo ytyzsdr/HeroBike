@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/color_white">
+        <ImageView
+            android:id="@+id/head_left"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:scaleType="center"
+            android:src="@drawable/back_bg"/>
+        <TextView
+            android:id="@+id/head_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/color_black"
+            android:textSize="18sp"
+            android:text="标题"
+            />
+        <TextView
+            android:id="@+id/head_right"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:textColor="#333333"
+            android:textSize="14sp"
+            android:text="分享"
+            android:gravity="center"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/share_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.baidu.mapapi.map.MapView
+                android:id="@+id/bmapView"
+                android:layout_width="fill_parent"
+                android:layout_height="180dp"
+                android:clickable="true" />
+            <ImageView
+                android:id="@+id/sceen_img"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:scaleType="center"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/icon_my"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:elevation="10dp"
+                android:outlineProvider="background"
+                android:background="@drawable/xl_circle"
+                android:layout_marginBottom="10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="150dp"
+                android:src="@drawable/portrait"
+                app:civ_border_color="@color/color_white"
+                app:civ_border_width="3dp" />
+
+            <TextView
+                android:id="@+id/nickName"
+                style="@style/black_17_w_w"
+                android:visibility="gone"
+                android:layout_alignBottom="@+id/icon_my"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@+id/icon_my" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/syscode"
+            android:layout_width="173dp"
+            android:layout_height="26dp"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:textColor="#333333"
+            android:background="@drawable/xl_bikecode_bg"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:text="@string/stroke_detail_bike_code" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="27dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:scaleType="center"
+                    android:src="@drawable/mileage_icon" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/ride_distance"
+                        style="@style/black_25_w_w"
+                        android:text="0" />
+
+                    <TextView
+                        android:id="@+id/ride_distance_unit"
+                        style="@style/deep_gray_12_w_w"
+                        android:text="@string/stroke_detail_km" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:scaleType="center"
+                    android:src="@drawable/carbon_icon" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/saving_g"
+                        style="@style/black_25_w_w"
+                        android:text="0" />
+
+                    <TextView
+                        style="@style/deep_gray_12_w_w"
+                        android:text="@string/stroke_detail_g" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="21dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:scaleType="center"
+                    android:src="@drawable/calories_icon" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/kcal"
+                        style="@style/black_25_w_w"
+                        android:text="0" />
+
+                    <TextView
+                        style="@style/deep_gray_12_w_w"
+                        android:text="@string/stroke_detail_kcal" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:scaleType="center"
+                    android:src="@drawable/time_icon" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/ride_time"
+                        style="@style/black_25_w_w"
+                        android:text="0" />
+
+                    <TextView
+                        style="@style/deep_gray_12_w_w"
+                        android:text="@string/stroke_detail_min" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            style="@style/line"
+            android:visibility="gone"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="21dp" />
+
+        <TextView
+            style="@style/black_14_w_w"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="24dp"
+            android:visibility="gone"
+            android:drawableLeft="@drawable/money_icon"
+            android:drawablePadding="7dp"
+            android:gravity="center_vertical"
+            android:text="@string/stroke_detail_totoal_money"
+            android:id="@+id/money" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_weight="1">
+            <RelativeLayout
+                android:id="@+id/shareQrCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:visibility="gone"
+                android:layout_margin="20dp">
+
+                <ImageView
+                    android:id="@+id/qrCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="center" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/qrCode"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/myAppName"
+                        style="@style/black_15_w_w"
+                        android:text="@string/app_name_share" />
+
+                    <TextView
+                        android:id="@+id/myAppName_en"
+                        style="@style/deep_gray_14_w_w"
+                        android:text="@string/app_name_en" />
+                </LinearLayout>
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/share"
+                style="@style/black_14_w_w"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/share_icon"
+                android:text="@string/stroke_detail_share" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <!--主题色-->
+    <color name="color_theme">#FFBB4A</color>
+    <!--黑色-->
+    <color name="color_black">#000000</color>
+    <!--分割线色-->
+    <color name="color_line">#dfdfdf</color>
+    <!--分割线色-->
+    <color name="color_aux_gray">#B2B2B2</color>
+    <!--背景色-->
+    <color name="color_bg">#F5F5F5</color>
+    <!--深灰色-->
+    <color name="color_deep_gray">#888888</color>
+    <!--提示红-->
+    <color name="color_tip_red">#FF4100</color>
+    <!--可点击渐变1色-->
+    <color name="color_click_nor_s">#FFCF00</color>
+    <!--可点击渐变2色-->
+    <color name="color_click_nor_e">#FFBB4A</color>
+    <!--点击后渐变1色-->
+    <color name="color_click_ed_s">#FFB500</color>
+    <!--点击后渐变2色-->
+    <color name="color_click_ed_e">#FF9F00</color>
+    <!--不可点击渐变1色-->
+    <color name="color_click_none_s">#7FFFCF00</color>
+    <!--不可点击渐变2色-->
+    <color name="color_click_none_e">#7FFFBB4A</color>
+
+    <color name="color_333333">#333333</color>
+    <color name="color_FF9F00">#FF9F00</color>
+    <color name="color_a5a5a5">#a5a5a5</color>
+    <color name="color_ffffff">#ffffff</color>
+    <color name="color_main">#ffa723</color>
+    <color name="color_999999">#999999</color>
+    <color name="color_ffa723">#ffa723</color>
+
+    <!-- 邀请界面色-->
+    <color name="color_invate">#FF7E00</color>
+
+    <!--警告色-->
+    <color name="color_balance">#ff9805</color>
+
+
+
+</resources>

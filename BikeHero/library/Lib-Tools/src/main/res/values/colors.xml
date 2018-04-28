@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="translate">#00000000</color>
+    <!--主题色-->
+    <color name="color_theme">#5890FF</color>
+    <!--主题色40-->
+    <color name="color_theme_si">#285890FF</color>
+    <!--背景色-->
+    <color name="color_backgroud">#F5F5F5</color>
+    <!--分割线-->
+    <color name="color_line">#E5E5E5</color>
+    <!--辅助灰-->
+    <color name="color_aux_gray">#B2B2B2</color>
+    <!--黑色-->
+    <color name="color_black">#000000</color>
+    <!--黑色-->
+    <color name="color_black_6">#3c000000</color>
+    <!--黑色40-->
+    <color name="color_black_si">#28000000</color>
+    <!--深灰色-->
+    <color name="color_deep_gray">#888888</color>
+    <!--深灰色-->
+    <color name="color_deep_gray_7">#70888888</color>
+    <!--提示红-->
+    <color name="color_tip_red">#FF4100</color>
+    <!--白色-->
+    <color name="color_white">#FFFFFF</color>
+    <!--白色40-->
+    <color name="color_white_si">#28FFFFFF</color>
+    <!--按钮-可操作-->
+    <color name="color_btn_nor">#5890FF</color>
+    <!--按钮-点击后-->
+    <color name="color_btn_pre">#3461B9</color>
+    <!--按钮-不可操作-->
+    <color name="color_btn_none">#A1C1FF</color>
+    <!--条目点击色-->
+    <color name="color_item_click">#D9D9D9</color>
+    <!--纯透明-->
+    <color name="color_translate">#00000000</color>
+    <!--警告色-->
+    <color name="color_caveat">#FEDCDB</color>
+</resources>

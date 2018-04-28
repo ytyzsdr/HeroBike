@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/top_title_layout"
+        layout="@layout/head_layout" />
+
+    <LinearLayout
+        android:layout_below="@+id/top_title_layout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/nouse_layout"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:background="@drawable/xl_offer_bg"
+            android:layout_height="48dp">
+            <TextView
+                android:layout_marginLeft="14dp"
+                android:text="不使用优惠券"
+                android:layout_centerVertical="true"
+                style="@style/xl_15_333333"/>
+            <ImageView
+                android:layout_alignParentRight="true"
+                android:id="@+id/select_icon_id"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="14dp"
+                android:src="@drawable/xl_rechart_select"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            android:listSelector="@color/translate"
+            android:divider="@null">
+
+        </ListView>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/empty_view"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="center"
+            android:src="@drawable/preferential_empty" />
+        <TextView
+            android:id="@+id/empty_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#333333"
+            android:textSize="16sp"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/empty_offer"
+            android:layout_marginTop="25dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#666666"
+            android:textSize="11sp"
+            android:layout_gravity="center_horizontal"
+            android:text="按时参与活动可获得哦~"
+            android:layout_marginTop="5dp"
+            />
+    </LinearLayout>
+</RelativeLayout>

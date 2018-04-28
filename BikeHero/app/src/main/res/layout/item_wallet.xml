@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+    <View style="@style/line" android:layout_marginLeft="15dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:background="@color/color_white">
+        <TextView
+            android:id="@+id/type"
+            style="@style/black_17_w_w"
+            android:layout_marginLeft="15dp"
+            android:text="safdasdf"/>
+        <TextView
+            android:id="@+id/time"
+            style="@style/deep_gray_13_w_w"
+            android:layout_below="@+id/type"
+            android:layout_alignLeft="@+id/type"
+            android:layout_marginTop="1.5dp"
+            android:text="sfasdfasd"/>
+        <TextView
+            android:id="@+id/money"
+            style="@style/tip_red_14_w_w"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:text="adfasdf"/>
+    </RelativeLayout>
+</LinearLayout>-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="88dp"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:minHeight="88dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/balance_indicator" />
+
+            <TextView
+                android:id="@+id/type"
+                style="@style/xl_15_333333"
+                android:layout_marginLeft="10dp"
+                android:text="adfaafdadf" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/time"
+            style="@style/xl_14_a5a5a5"
+            android:layout_marginLeft="19dp"
+            android:layout_marginTop="7dp"
+            android:text="asdfsafd" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/money"
+        style="@style/xl_14_9805"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+        android:text="1234234" />
+
+    <View
+        style="@style/line"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

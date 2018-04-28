@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/color_white">
+
+        <ImageView
+            android:id="@+id/title_left_img"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:scaleType="center"
+            android:src="@drawable/back_bg" />
+
+
+        <TextView
+            android:id="@+id/title_text"
+            style="@style/black_18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/zxing_code" />
+
+        <TextView
+            android:id="@+id/title_right"
+            style="@style/black_16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="10dp"
+            android:visibility="gone"
+            android:text="@string/zxing_scan" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="153dp">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/digital_bike_picture"
+                    android:id="@+id/imageView2" />
+
+
+            </RelativeLayout>
+
+            <!--  <TextView
+                  android:id="@+id/scan_desc"
+                  style="@style/deep_gray_14"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="center_horizontal"
+                  android:layout_marginTop="26dp"
+                  android:text="@string/zxing_code_tip" />-->
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp">
+
+        <TableLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow>
+
+                <LinearLayout style="@style/row_ll">
+
+                    <TextView
+                        android:id="@+id/row1"
+                        style="@style/row_9" />
+
+                    <View style="@style/row_line" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/row_ll">
+
+                    <TextView
+                        android:id="@+id/row2"
+                        style="@style/row_9" />
+
+                    <View style="@style/row_line" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/row_ll">
+
+                    <TextView
+                        android:id="@+id/row3"
+                        style="@style/row_9" />
+
+                    <View style="@style/row_line" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/row_ll">
+
+                    <TextView
+                        android:id="@+id/row4"
+                        style="@style/row_9" />
+
+                    <View style="@style/row_line" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/row_ll">
+
+                    <TextView
+                        android:id="@+id/row5"
+                        style="@style/row_9" />
+
+                    <View style="@style/row_line" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/row_ll">
+
+                    <TextView
+                        android:id="@+id/row6"
+                        style="@style/row_9" />
+
+                    <View style="@style/row_line" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/row_ll">
+
+                    <TextView
+                        android:id="@+id/row7"
+                        style="@style/row_9" />
+
+                    <View style="@style/row_line" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/row_ll">
+
+                    <TextView
+                        android:id="@+id/row8"
+                        style="@style/row_9" />
+
+                    <View style="@style/row_line" />
+                </LinearLayout>
+
+            </TableRow>
+        </TableLayout>
+
+        <EditText
+            android:id="@+id/edt_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:hint="@string/zxing_code_tip"
+            android:background="@drawable/xl_codeinput_bg"
+            android:cursorVisible="false"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:inputType="number"
+            android:maxLength="8"
+            android:textSize="20sp"
+            android:textColor="#333333" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/shadow_layout_id"
+        android:layout_marginTop="17dp"
+        android:background="@drawable/bottom_shadow_bg_nomal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/sure"
+            android:textSize="18sp"
+            android:textColor="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:gravity="center"
+            android:background="@drawable/xl_button_select"
+            android:enabled="false"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="25dp"
+            android:text="@string/zxing_code_sure" />
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/xl_light_select_bg"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/light_text"
+        android:textSize="11sp"
+        android:textColor="#333333"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:text="手电筒"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

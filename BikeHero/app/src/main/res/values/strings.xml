@@ -1,0 +1,374 @@
+<resources>
+    <string name="app_name">单车侠之家</string>
+    <string name="app_name_share">单车侠之家</string>
+    <string name="app_name_en">share tools</string>
+    <string name="provider_file">com.pgyersdk.test.fileProvider</string>
+    <!--手机绑定-->
+    <string name="bind_phone">手机登录</string>
+    <string name="bind_phone_num">手机号码</string>
+    <string name="bind_phone_num_tip">填写手机号码</string>
+    <string name="bind_auth">验证码</string>
+    <string name="bind_auth_tip">填写验证码</string>
+    <string name="bind_get_auth">获取验证码</string>
+    <string name="bind_resend">重新发送</string>
+    <string name="bind_complete">完成</string>
+    <string name="bind_text">点击完成，即表示已阅读并同意</string>
+    <string name="bind_rules">《用车服务条例》</string>
+    <string name="bind_rules_title">用车服务条例</string>
+
+    <string name="bind_toast1">请输入手机号码</string>
+    <string name="bind_toast2">请输入正确的手机号码</string>
+    <string name="bind_toast3">重新发送(</string>
+    <string name="bind_toast4">获取验证码</string>
+    <string name="bind_toast5">登录成功</string>
+    <!--开锁-->
+    <string name="zxing_scan">扫码开锁</string>
+    <string name="zxing_code">编码开锁</string>
+    <string name="zxing_text">对准车上的二维码</string>
+    <string name="zxing_code_tip">输入车上的编号解锁用车</string>
+    <string name="zxing_code_tip_battery">输入蓄电池的编号开启使用</string>
+    <string name="zxing_code_sure">确认</string>
+    <string name="lock_oping">开锁中</string>
+    <string name="lock_oping_success">开锁成功</string>
+    <string name="lock_oping_failed">开锁失败</string>
+    <string name="scan_light">手电筒</string>
+    <string name="ring">正在响铃</string>
+    <!--开锁提醒-->
+    <string name="open_lock_tip_1">抱歉，我的故障车，换一辆小毛驴单车吧</string>
+    <string name="open_lock_tip_2">抱歉，我正在服务其他人，换一辆小毛驴单车吧</string>
+    <string name="open_lock_tip_3">抱歉，我被别人预约了，换一辆小毛驴单</string>
+    <string name="open_lock_tip_4">抱歉，我不是您的预约车，换一辆小毛驴单车吧</string>
+    <!--我-->
+    <string name="my_title">我</string>
+    <string name="my_ll1">我的行程</string>
+    <string name="my_ll2">我的钱包</string>
+    <string name="my_ll3">我的优惠</string>
+    <string name="my_ll4">邀请好友</string>
+    <string name="my_ll5">用户指南</string>
+    <string name="my_ll6">设置</string>
+    <string name="my_ll7">联系我们</string>
+    <string name="my_ll8">我的VIP</string>
+    <string name="my_ll10">消息中心</string>
+    <string name="person_km">骑行里程(km)</string>
+    <string name="person_m">骑行里程(m)</string>
+    <string name="person_min">骑行时长(min)</string>
+    <string name="person_kcal">消耗热量(kcal)</string>
+    <string name="person_cal">消耗热量(cal)</string>
+    <string name="certifacation_title">用户激活</string>
+    <string name="certifacation_title_no">用户激活</string>
+    <string name="certifacation_au1">手机验证</string>
+    <string name="certifacation_au2">余额充值</string>
+    <string name="certifacation_au3">实名认证</string>
+    <string name="certifacation_au4">立刻体验</string>
+
+    <string name="my_toast1">您还没有激活账号， 暂不能邀请好友。</string>
+    <string name="my_toast2">知道了</string>
+    <string name="my_toast3">请输入正确的编号</string>
+    <!--押金充值-->
+    <string name="charge_title">余额充值</string>
+    <string name="charge_tip">需缴纳押金</string>
+    <string name="charge_unit">元</string>
+    <string name="charge_tip1">可全额退</string>
+    <string name="charge_wx">微信支付</string>
+    <string name="charge_zfb">支付宝支付</string>
+    <!--实名认证-->
+    <string name="activity_certifacation_title">实名认证</string>
+    <string name="activity_certifacation_name">姓名</string>
+    <string name="activity_certifacation_name_tip">请输入真实姓名</string>
+    <string name="activity_certifacation_auth">身份证号</string>
+    <string name="activity_certifacation_auth_tip">请输入身份证号</string>
+    <string name="activity_certifacation_complete">认证</string>
+    <string name="certi_student_id">学号</string>
+    <string name="certi_student_id_edt">请输入学号</string>
+    <string name="certi_callage_id">学校</string>
+    <string name="certi_callage_id_edt">请输入学校名称</string>
+    <string name="add_photo">上传证件材料（身份证、学生证及相关证件）</string>
+    <string name="up_success">认证中，会在24小时内认证完毕</string>
+    <string name="up_failed">重新认证</string>
+
+    <string name="certifacation_toast1">姓名不能为空</string>
+    <string name="certifacation_toast2">请输入正确的身份证号码</string>
+    <string name="certifacation_toast3">认证完成</string>
+    <string name="certifacation_toast4">请输入正确的学号</string>
+    <string name="certifacation_toast6">请上传至少一张照片</string>
+    <string name="certifacation_toast5">请输入正确的学校名称</string>
+    <!--邀请码-->
+    <string name="invate_title">邀请码</string>
+    <string name="invate_success">恭喜您激活成功</string>
+    <string name="invate_tips">填写好友的专属邀请码</string>
+    <string name="invate_tips1">填入好友的专属邀请码</string>
+    <string name="invate_indent">立刻体验</string>
+    <!--个人信息-->
+    <string name="person_title">个人信息</string>
+    <string name="person_avatar">头像</string>
+    <string name="person_username">昵称</string>
+    <string name="person_phone">手机号</string>
+    <string name="person_name">姓名</string>
+    <string name="student_name">学校</string>
+    <string name="person_indent">实名认证</string>
+    <string name="person_unindent">未认证</string>
+    <string name="person_indented">已认证</string>
+    <string name="person_set_power">电机功率</string>
+    <string name="person_set_power_click">点击设置</string>
+    <!--行程详情-->
+    <string name="stroke_detail_title">行程详情</string>
+    <string name="stroke_detail_km">骑行里程(km)</string>
+    <string name="stroke_detail_g">节约碳排(g) </string>
+    <string name="stroke_detail_kcal">消耗热量(cal)</string>
+    <string name="stroke_detail_min">骑行时长(min)</string>
+    <string name="stroke_detail_totoal_money">行程共花费</string>
+    <string name="stroke_detail_totoal_money_unit">元</string>
+    <string name="stroke_detail_bike_code">自行车编号：</string>
+    <string name="stroke_detail_share">分享行程</string>
+    <!--骑行结束-->
+    <string name="ride_over_title">骑行结束</string>
+    <string name="ride_over_offer">我的优惠</string>
+    <string name="ride_over_stroker_detail">行程详情</string>
+    <string name="ride_over_stroker_detail_view">查看</string>
+    <string name="ride_over_wx">微信支付</string>
+    <string name="ride_over_zfb">支付宝支付</string>
+    <string name="ride_over_pay">支付</string>
+    <!--我的钱包-->
+    <string name="wallet_title">我的钱包</string>
+    <string name="wallet_charge">押金</string>
+    <string name="wallet_charge_unit">元</string>
+    <string name="wallet_rechrge">充押金</string>
+    <string name="wallet_stype">类型(时间)</string>
+    <string name="wallet_money">金额</string>
+    <string name="wallet_dialog_btn">押金退款</string>
+    <string name="wallet_dialog_text">押金退还时间为2-7个工作日，在此期间您的账户将无法使用。是否仍然退押金？</string>
+    <string name="wallet_dialog_recharge_text1">请选择支付方式</string>
+    <string name="wallet_dialog_recharge_text2">支付</string>
+    <string name="wallet_dialog_recharge_text3">押金</string>
+    <string name="wallet_dialog_recharge_text4">元</string>
+    <string name="wallet_dialog_recharge_text5">微信支付</string>
+    <string name="wallet_dialog_recharge_text6">支付宝支付</string>
+    <string name="wallet_dialog_recharge_text7">去支付</string>
+    <string name="wallet_list_recharge">付款成功</string>
+    <string name="wallet_list_refound">退款成功</string>
+    <string name="wallet_list_refounding">退款中</string>
+    <!--设置-->
+    <string name="set_title">设置</string>
+    <string name="set_about_us">关于我们</string>
+    <string name="set_set_protocol">用户协议</string>
+    <string name="set_about_charge">押金说明</string>
+    <string name="set_about_clear">清空缓存</string>
+    <string name="set_logout">退出登录</string>
+    <!--要求好友-->
+    <string name="my_invate_title">邀请好友</string>
+    <string name="my_invate_text1">邀请1位好友注册您将获得</string>
+    <string name="my_invate_text2">元优惠券奖励</string>
+    <string name="my_invate_text_code">您的邀请码为：</string>
+    <string name="my_invate_share">邀请好友</string>
+    <!--w我的优惠-->
+    <string name="my_offer_title">我的优惠</string>
+    <string name="my_offer_effictor">适用于全国，不限使用时段</string>
+    <string name="my_offer_date">有效期至</string>
+    <string name="my_offer_money">元代金券</string>
+    <!--问题反馈-->
+    <string name="feedback_title">问题反馈</string>
+    <string name="feedback_bike_code">请输入单车编号</string>
+    <string name="feedback_bike_code_battaery">请输入编号</string>
+    <string name="feedback_choose_qusetion_type">请选择问题类型</string>
+    <string name="feedback_qusetion_item1">无法开锁</string>
+    <string name="feedback_qusetion_item2">发现车辆故障</string>
+    <string name="feedback_qusetion_item3">举报违停</string>
+    <string name="feedback_qusetion_item4">举报违法用车</string>
+    <string name="feedback_qusetion_item5">押金问题</string>
+    <string name="feedback_qusetion_item6">更多问题</string>
+    <string name="feedback_scan_title">扫描</string>
+    <string name="feedback_scan_title_battery">扫码获取编号</string>
+    <string name="feedback_qusetion_using_item1">关锁未结费</string>
+    <string name="feedback_qusetion_using_item2">发现车辆故障</string>
+    <string name="feedback_qusetion_using_item3">锁环扣不住</string>
+    <string name="feedback_qusetion_using_item4">其他问题</string>
+    <string name="feedback_qusetion_complete_item1">账号申诉</string>
+    <string name="feedback_qusetion_complete_item2">其他问题</string>
+    <string name="feedback_qusetion_desc">请描述遇到的问题和建议</string>
+    <string name="feedback_up_photo">上传照片(0/4)</string>
+    <string name="feedback_complete">提交</string>
+    <string name="feedback_more_question_item1">私上车锁</string>
+    <string name="feedback_more_question_item2">疑似盗车</string>
+    <string name="feedback_more_question_item3">车辆太脏</string>
+    <string name="feedback_more_question_item4">其他问题</string>
+
+    <string name="feedback_toast1">描述不能为空</string>
+    <string name="feedback_toast2">车辆编码不能为空</string>
+    <string name="feedback_toast3">请选择问题类型</string>
+    <string name="feedback_toast4">解析二维码失败</string>
+    <string name="feedback_toast5">知道了</string>
+    <!--搜索-->
+    <string name="seach_title">搜索</string>
+    <string name="seach_my_location">我的位置：</string>
+    <string name="seach_lcation_failed">定位失败</string>
+    <string name="seach_clear">清空历史记录</string>
+
+    <string name="seach_toast1">清空历史记录</string>
+    <string name="seach_toast2">您确定清空历史记录么？</string>
+    <string name="seach_toast3">确定</string>
+    <string name="seach_toast4">取消</string>
+    <!--首页下面的功能模块-->
+    <string name="index_bottom">扫描解锁</string>
+    <!--预约-->
+    <string name="reservation_min">步行时间(min)</string>
+    <string name="reservation_km">单车距离(km)</string>
+    <string name="reservation_now">立即预约</string>
+    <string name="reservation_ing_ring">寻车铃</string>
+    <string name="reservation_ing">预约中</string>
+    <string name="reservation_ing_time">剩余时间：</string>
+    <string name="reservation_ing_cancel">取消预约</string>
+    <!--骑行结束-->
+    <string name="ride_title">骑行结束</string>
+    <string name="ride_title_battery">使用结束</string>
+    <string name="ride_money">行程总费用</string>
+    <string name="ride_money_unit">元</string>
+    <string name="ride_time">骑行时间：</string>
+    <string name="ride_time_unit">分钟</string>
+    <string name="ride_pay_money">待支付</string>
+    <string name="ride_offer">优惠￥</string>
+    <string name="ride_no_offer">无可用优惠券</string>
+    <string name="ride_question">遇到问题</string>
+    <!--用车中-->
+    <string name="using_fragment">关闭即可结束行程</string>
+    <string name="using_fragment_question">关锁后未结束？</string>
+    <string name="using">正在用车</string>
+    <string name="using_money">预计费用</string>
+    <!--我的行程-->
+    <string name="my_stroke_title">我的行程</string>
+    <string name="my_stroke_money">骑行花费</string>
+    <string name="my_battery_money">使用花费</string>
+    <string name="my_stroke_time">骑行时长：</string>
+    <string name="my_stroke_money_unit">元</string>
+    <!--修改昵称-->
+    <string name="fix_username">修改昵称</string>
+    <string name="fix_username_hint">请输入您的昵称</string>
+    <string name="fix_save">保存</string>
+    <!--预约-->
+    <string name="reversation_no_ident">登录即可预约单车</string>
+    <!--空页面-->
+    <string name="empty_trip">暂无骑行记录</string>
+    <string name="empty_trip_bat">暂无骑行记录</string>
+    <string name="empty_offer">暂无可用优惠</string>
+    <string name="feedback_tips">感谢反馈，我们会尽快处理！</string>
+
+    <string name="toast_1">获取二维码失败，请重新扫描</string>
+    <string name="toast_2">知道了</string>
+    <string name="toast_3">读取二维码失败</string>
+    <string name="toast_4">昵称不能为空</string>
+    <string name="toast_5">修改成功</string>
+    <string name="toast_6">我的行程</string>
+    <string name="toast_7">支付成功</string>
+    <string name="toast_8">支付失败</string>
+    <string name="toast_9">用户未安装微信</string>
+    <string name="toast_10">支付提醒</string>
+    <string name="toast_11">是否已经完成支付?</string>
+    <string name="toast_12">支付完成</string>
+    <string name="toast_13">遇到问题</string>
+    <string name="toast_14">提示</string>
+    <string name="toast_15">每天只可以取消</string>
+    <string name="toast_16">次哦</string>
+    <string name="toast_17">确定</string>
+    <string name="toast_18">取消</string>
+    <string name="toast_19">元</string>
+    <string name="toast_20">退押金成功</string>
+    <string name="toast_21">支付押金</string>
+    <string name="toast_22">再按一次退出</string>
+    <string name="toast_23">提示</string>
+    <string name="toast_24">您有未支付的行程</string>
+    <string name="toast_25">去支付</string>
+    <string name="toast_26">取消</string>
+    <string name="toast_27">预约成功</string>
+    <string name="toast_28">预约已取消</string>
+    <string name="toast_29">详情</string>
+    <string name="toast_30">请求成功</string>
+    <string name="toast_31">功率不能为空</string>
+    <!--定点还车-->
+    <string name="park_tips">停在停车区域内，关锁后即可结束用车</string>
+    <string name="park_money">预计费用：</string>
+    <string name="park_code">单车编号：</string>
+    <string name="park_location">位置更新：</string>
+    <string name="park_refresh">刷新位置</string>
+    <string name="park_open_loack">开锁</string>
+    <string name="park_text1">系统判断车辆，不在停车区域内。</string>
+    <string name="park_text2">1、若车辆已在停车区域内，请尝试点击【车辆位置】重新定位车辆位置。</string>
+    <string name="park_text3">2、若车辆不在停车区域内，请点击【开锁】移动车辆至指定停车区域停车。</string>
+
+    <string name="umbrella_markers_desc1">步行</string>
+    <string name="umbrella_markers_desc2">分钟</string>
+    <string name="umbrella_markers_desc3">距离</string>
+    <string name="umbrella_markers_desc4">米</string>
+    <!--会员-->
+    <string name="member_title">我的VIP</string>
+    <string name="member_vip_title">会员卡</string>
+    <string name="member_vip_free">您可以免费使用</string>
+    <string name="member_vip_buy">购买会员卡</string>
+    <string name="member_vip_wx">微信支付</string>
+    <string name="member_vip_zfb">支付宝支付</string>
+    <string name="member_vip_go">去支付</string>
+    <string name="member_empty">暂无消费明细</string>
+    <string name="member_list_title">明细</string>
+    <!--我的钱包-->
+    <string name="my_wallet_title">我的钱包</string>
+    <string name="my_wallet_detail">明细</string>
+    <string name="my_wallet_balance">余额(元)</string>
+    <string name="my_wallet_rechart">充值</string>
+    <string name="my_wallet_return">押金退款</string>
+    <string name="my_wallet_deposit">押金</string>
+    <string name="my_wallet_unit">元</string>
+    <string name="my_wallet_rechart_depsit">充押金</string>
+
+    <string name="to_rechart_title">充值</string>
+    <string name="to_rechart_money">充值金额</string>
+    <string name="to_rechart_tips">点击去充值，即表示已阅读同意</string>
+    <string name="to_rechart_rules">充值协议</string>
+    <string name="to_rechart">去充值</string>
+
+    <string name="rechart_history">余额明细</string>
+    <string name="deposit_history">押金明细</string>
+    <string name="rideover_money_empty">您的余额不足，请前往充值</string>
+    <string name="news_empty">暂无新的消息记录</string>
+    <string name="umbrella_ask_feedback">我们已收到异常通知，您本次使用将会正常结费，您的账户将在确认后恢复使用</string>
+
+    <string name="my_ll9">消息中心</string>
+    <string name="message_detail">消息详情</string>
+
+    <!--蓄电池-->
+    <string name="battery_go">前往</string>
+    <string name="battery_distance">距离起始(km)</string>
+    <string name="battery_remain">剩余电量(%)</string>
+    <string name="battery_life">续航里程(km)</string>
+    <string name="battery_price">价格：</string>
+    <string name="battery_price_unit">元/小时</string>
+    <string name="battery_tips">型号规格说明</string>
+
+    <string name="battery_use_tip">结束使用即可结束用电</string>
+    <string name="battery_use_close">结束后未结算？</string>
+    <string name="battery_use_money">预计费用：</string>
+    <string name="battery_use_stop_trip">结束行程</string>
+
+    <string name="battery_ride_distance_km">骑行里程(km)</string>
+    <string name="battery_ride_distance_m">骑行里程(m)</string>
+    <string name="battery_ride_time">使用时长(min)</string>
+    <string name="battery_detail_title">记录详情</string>
+    
+    <string name="battery_show_distance">显示续航里程</string>
+    <string name="battery_show_to_set">设置电机功率</string>
+    <string name="battery_detail_borrow_time">借用时间：</string>
+    <string name="battery_detail_borrow_add">借用地址：</string>
+    <string name="battery_detail_return_time">归还时间：</string>
+    <string name="battery_detail_return_add">归还地址：</string>
+    <string name="battery_detail_sysCode">订单编号：</string>
+    <!--修改功率-->
+    <string name="fix_power_title">电机功率</string>
+    <!--电单车-->
+    <string name="ele_price">价格：</string>
+    <!--新增开锁密码-->
+    <string name="using_paw">单车的解锁码</string>
+    <!--自动更新-->
+    <string name="update_title">更新</string>
+    <string name="update_desc">请及时更新，以免对您的使用造成影响！</string>
+    <string name="update_sure">确定</string>
+    <string name="downloading">下载中...</string>
+    <string name="premiss_file">没有权限,请手动开启文件权限</string>
+    <string name="premiss_location">没有权限,请手动开启定位权限</string>
+</resources>
